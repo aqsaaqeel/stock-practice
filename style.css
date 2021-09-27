@@ -1,0 +1,22 @@
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    background-color : black;
+    color :white;
+    padding : 2rem;
+}
+label {
+    display : block;
+    text-align: center;
+    padding : 1rem;
+}
+#select-button {
+    display : block;
+    text-align : center;
+    margin : auto;
+}
+#output-area {
+    text-align: center;
+    border : solid 1px;
+    padding: 2rem;
+}

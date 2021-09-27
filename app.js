@@ -10,24 +10,27 @@ function calculateProfitOrLoss(initial, quantity, current) {
         var lossPercentage = (loss / initial) * 100;
         outputArea.innerText = "You suffered a loss of " + loss +
          " and loss percentage is "+ lossPercentage + " %";
+         document.getElementById("body").style.backgroundColor ="red";
     }
     else if(current > initial) {
         var profit = (current - initial) * quantity;
         var profitPercentage = (profit / initial) * 100;
         outputArea.innerText = "You suffered a profit of " + profit +
          " and profit percentage is "+ profitPercentage + " %";
-    }
+         document.getElementById("body").style.backgroundColor ="green";
+        }
     else {
         outputArea.innerText = "You had no gains or losses";
+        document.getElementById("body").style.backgroundColor ="yellow";
     }
 }
 
 selectButton.addEventListener("click", clickHandler);
 
 function clickHandler(){
-    var initial = initialPrice.value;
-    var quantity = quantityStock.value;
-    var current = currentPrice.value;
+    var initial = Number(initialPrice.value);
+    var quantity = Number(quantityStock.value);
+    var current = Number(currentPrice.value);
     
     calculateProfitOrLoss(initial, quantity, current); 
 }
