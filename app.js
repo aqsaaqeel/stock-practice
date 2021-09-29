@@ -15,7 +15,7 @@ function calculateProfitOrLoss(initial, quantity, current) {
     else if(current > initial) {
         var profit = (current - initial) * quantity;
         var profitPercentage = (profit / initial) * 100;
-        outputArea.innerText = "You suffered a profit of " + profit +
+        outputArea.innerText = "You had a profit of " + profit +
          " and profit percentage is "+ profitPercentage + " %";
          document.getElementById("body").style.backgroundColor ="green";
         }

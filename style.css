@@ -17,6 +17,16 @@ label {
 }
 #output-area {
     text-align: center;
-    border : solid 1px;
     padding: 2rem;
+}
+#body {
+    text-align: justify;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+.hero {
+    max-width: 50%;
+    margin :auto;
+    display : block;
 }
